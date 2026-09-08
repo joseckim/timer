@@ -1,13 +1,14 @@
-let timer = 5;
+let timer = 20;
+const timerElement = document.getElementById("timer");
 
 function clock() {
     if (timer > 0) {
-        console.log("timer." + timer + " seconds.");
-        timer--;
+        timerElement.textContent = "timer: " + timer + " seconds.";
+        timer = timer - 1 ;
         return;
     }
 
-    console.log("time's up.");
+    timerElement.textContent = "time's up.";
     clearInterval(intervalId);
 }
 
