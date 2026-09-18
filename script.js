@@ -1,3 +1,5 @@
+let timer = 5;
+
 function clock() {
     if (timer > 0) {
         console.log("timer." + timer + " seconds.");
@@ -11,4 +13,3 @@ function clock() {
 
 const intervalId = setInterval(clock, 1000);
 
-let timer = 5;
